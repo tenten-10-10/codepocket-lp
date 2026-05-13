@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodePocket｜開発メモとコードをすぐ整理</title>
+  <meta name="description" content="CodePocketは、コード断片や作業メモをチャット感覚で残して、カードとカードボックスで見返せる開発メモアプリです。iPhone/iPadで使えます。">
+  <meta name="theme-color" content="#114232">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CodePocket｜開発メモとコードをすぐ整理">
+  <meta property="og:description" content="思いついたコード、エラー内容、作業メモをすぐ残して、あとからカードで見返せる開発メモアプリ。">
+  <meta property="og:image" content="./assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header" aria-label="サイトヘッダー">
+    <a class="brand" href="#top" aria-label="CodePocket トップへ">
+      <img src="./assets/app-icon.png" alt="" width="34" height="34">
+      <span>CodePocket</span>
+    </a>
+    <nav class="header-nav" aria-label="主要ナビゲーション">
+      <a href="#features">できること</a>
+      <a href="#howto">使い方</a>
+      <a href="#support">サポート</a>
+      <a href="#privacy">プライバシー</a>
+    </nav>
+    <button class="header-cta" type="button" data-app-store>App Store</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">iPhone / iPadで使える開発メモ</p>
+          <h1>CodePocket</h1>
+          <p class="hero-lead">コードや作業メモを、あとで見つかる形に。</p>
+          <p class="hero-text">
+            思いついたコード断片、エラー内容、ちょっとした作業ログをチャット感覚で残して、
+            カードとカードボックスで整理できます。
+          </p>
+          <div class="hero-actions" aria-label="ダウンロード導線">
+            <button class="primary-button" type="button" data-app-store>App Storeで見る</button>
+            <a class="secondary-link" href="#support">サポート情報</a>
+          </div>
+          <ul class="hero-notes" aria-label="特徴">
+            <li>アカウント不要</li>
+            <li>メモは端末内に保存</li>
+            <li>広告表示あり</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-label="CodePocketの画面イメージ">
+          <div class="phone-frame phone-main">
+            <img src="./assets/iphone-waterfall.png" alt="CodePocketのカード一覧画面">
+          </div>
+          <div class="phone-frame phone-side">
+            <img src="./assets/iphone-grid.png" alt="CodePocketのグリッド表示画面">
+          </div>
+          <div class="app-badge" aria-label="CodePocket iOS iPadOS">
+            <img src="./assets/app-icon.png" alt="">
+            <span><strong>CodePocket</strong><small>開発メモ</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pain-section" aria-labelledby="pain-title">
+      <div class="section-heading">
+        <p class="eyebrow">よくある悩み</p>
+        <h2 id="pain-title">小さな開発メモほど、あとで迷子になりがち。</h2>
+      </div>
+      <div class="pain-list">
+        <p>コード断片をチャットやメモ帳に散らしてしまう。</p>
+        <p>エラー原因や試したことを、あとから探すのに時間がかかる。</p>
+        <p>作業ログ、URL、メモ、タグが別々の場所にある。</p>
+        <p>Macの前を離れたあとでも、iPhoneでさっと残したい。</p>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="features" aria-labelledby="features-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">CodePocketでできること</p>
+        <h2 id="features-title">すぐ残す。カードで見る。ボックスで整理する。</h2>
+      </div>
+      <div class="feature-layout">
+        <div class="feature-media">
+          <img src="./assets/ipad-overview.png" alt="iPad幅で表示したCodePocketの画面">
+        </div>
+        <div class="feature-points">
+          <article>
+            <span>01</span>
+            <h3>チャット感覚のクイックメモ</h3>
+            <p>短いメモやコードを、思いついた瞬間に残せます。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>カードで見返せる</h3>
+            <p>ウォーターフォール、グリッド、リストで読みやすく確認できます。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>カードボックスで整理</h3>
+            <p>よく使うメモ、調査ログ、エラー対応を箱ごとに分けられます。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>端末内に保存</h3>
+            <p>アカウント登録なし。メモ本文はCodePocketの外部サーバーへ送りません。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section howto-section" id="howto" aria-labelledby="howto-title">
+      <div class="section-heading">
+        <p class="eyebrow">使い方</p>
+        <h2 id="howto-title">開いて、残して、あとで見返す。</h2>
+      </div>
+      <div class="steps">
+        <article>
+          <span>1</span>
+          <h3>メモを書く</h3>
+          <p>思いついた内容を短く入力。コード、URL、エラー内容も残せます。</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h3>カードで確認</h3>
+          <p>保存したメモをカード表示で確認。ピン留めや検索も使えます。</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h3>ボックスへ整理</h3>
+          <p>プロジェクト別、調査テーマ別など、自分の分け方で整理できます。</p>
+        </article>
+        <article>
+          <span>4</span>
+          <h3>iPhone/iPadで見返す</h3>
+          <p>移動中や作業の合間に、必要なメモをすぐ見返せます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section device-section" aria-labelledby="device-title">
+      <div class="device-copy">
+        <p class="eyebrow">対応端末</p>
+        <h2 id="device-title">まずはiPhone/iPadから。</h2>
+        <p>App Storeの正式URLが確定したら、このページのボタンを差し替えます。</p>
+      </div>
+      <div class="device-table" aria-label="対応端末一覧">
+        <div><span>iOS</span><strong>利用可能</strong></div>
+        <div><span>iPadOS</span><strong>利用可能</strong></div>
+        <div><span>macOS</span><strong>準備中</strong></div>
+      </div>
+    </section>
+
+    <section class="section showcase-section" aria-label="画面紹介">
+      <div class="showcase-copy">
+        <p class="eyebrow">画面イメージ</p>
+        <h2>メモの量が増えても、見返し方を変えられる。</h2>
+      </div>
+      <div class="showcase-grid">
+        <figure>
+          <img src="./assets/iphone-grid.png" alt="CodePocketのグリッド表示">
+          <figcaption>グリッドで一覧</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/iphone-card-boxes.png" alt="CodePocketのカードボックス画面">
+          <figcaption>ボックスで整理</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section faq-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">はじめて使う前の確認。</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" aria-expanded="false">パソコンがなくても使えますか？</button>
+          <div class="faq-answer">
+            <p>はい。iPhone/iPadだけでもメモを残して見返せます。Mac版は準備中です。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" aria-expanded="false">どんなメモに向いていますか？</button>
+          <div class="faq-answer">
+            <p>コード断片、エラー内容、作業ログ、調べたURL、あとで試したいアイデアなどに向いています。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" aria-expanded="false">メモはクラウドへ送られますか？</button>
+          <div class="faq-answer">
+            <p>CodePocket本体はメモを端末内に保存します。アカウント登録や独自のクラウド同期はありません。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" aria-expanded="false">広告は表示されますか？</button>
+          <div class="faq-answer">
+            <p>無料提供と継続的な開発のため、一部画面に広告を表示する場合があります。基本機能はそのまま使えます。</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" aria-expanded="false">App Storeリンクは正式URLですか？</button>
+          <div class="faq-answer">
+            <p>現在は仮URLです。正式なCodePocketのApp Store URLが確定したら差し替えます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section legal-section" id="support" aria-labelledby="support-title">
+      <div>
+        <p class="eyebrow">Support</p>
+        <h2 id="support-title">サポート</h2>
+      </div>
+      <div class="legal-copy">
+        <p>
+          不具合報告、サポート、フィードバックは
+          <a href="mailto:cless@planter.jp">cless@planter.jp</a>
+          までお送りください。
+        </p>
+        <p>メモは端末内に保存され、アカウント登録は不要です。クラウド同期はありません。</p>
+        <p><a href="./support/">サポートページを開く</a></p>
+      </div>
+    </section>
+
+    <section class="section legal-section" id="privacy" aria-labelledby="privacy-title">
+      <div>
+        <p class="eyebrow">Privacy</p>
+        <h2 id="privacy-title">プライバシー</h2>
+      </div>
+      <div class="legal-copy">
+        <p>
+          CodePocket本体は、ユーザーのメモ本文、タグ、カード、カードボックスを外部サーバーへ送信しません。
+          広告表示のため、Google AdMobなどの第三者広告配信サービスを利用する場合があります。
+        </p>
+        <p>App Tracking Transparencyを許可しない場合でも、CodePocketの基本機能は利用できます。</p>
+        <p><a href="./privacy/">プライバシーポリシーを開く</a></p>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <div>
+        <p class="eyebrow">Download</p>
+        <h2 id="final-title">開発メモを、今日からポケットに。</h2>
+        <p>まずはiPhone/iPadで使ってみてください。</p>
+      </div>
+      <button class="primary-button" type="button" data-app-store>App Storeで見る</button>
+    </section>
+  </main>
+
+  <aside class="floating-cta" aria-label="固定ダウンロード導線">
+    <span>CodePocket</span>
+    <button type="button" data-app-store>App Store</button>
+  </aside>
+</body>
+</html>
